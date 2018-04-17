@@ -1,0 +1,107 @@
+/******** For Fixed Table Header ********/
+.table-scroll {
+	position:relative;
+	max-width: 80%;
+	margin:auto;
+    overflow:hidden;
+    border-right: 1px solid #ccc;
+    margin-top: 100px;
+}
+
+#column-freeze-table-wrapper{
+    width: 100%;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+#column-freeze-table {
+    border-collapse: collapse;
+}
+
+table, td {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+#column-freeze-table thead{
+    display: block;
+    z-index: 999;
+}
+
+tbody {
+    display: block;
+    height: 350px;
+    width: 1365px;
+    overflow-y: auto;   
+}
+#column-freeze-table-body tr td {
+    background: #dadada;
+}
+.header-row{
+    background: #e7c6c6;
+    font-weight: bold;
+}
+
+/******** For Fixed Header & Body Fixed Width's ********/
+tr td:nth-child(1){
+    min-width: 150px;
+    white-space: nowrap;
+}
+
+tr td:nth-child(1),
+tr td:nth-child(2),
+tr td:nth-child(4){
+    width: 150px;
+}
+
+tr td:nth-child(3) {
+    width: 200px;
+}
+
+tr td:nth-child(5),
+tr td:nth-child(8) {
+    width: 75px;
+}
+
+tr td:nth-child(6),
+tr td:nth-child(7) {
+    width: 100px;
+}
+
+tr td:nth-child(9) {
+    width: 250px;
+}
+
+tr td:nth-child(1){
+    background: skyblue;
+}
+
+/******** For Fixed Column ********/
+#single-column-table{
+    position: absolute;
+    top: 31px;
+    left: 0px;
+    border-collapse: collapse;
+    border: none;
+    border-left: 1px solid #ccc;
+}
+
+.single-column-header-row{
+    position: absolute;
+    top: -30px;
+    font-weight: bold;
+    border-left: 1px solid #ccc;
+    left: 0px;
+}
+
+#single-column-table-body{
+    display: block;
+    height: 350px;
+    width: 178px;
+    overflow-y: scroll;
+}
+
+#single-column-table-body::-webkit-scrollbar {
+    width: 0px; 
+    background: transparent;
+}
